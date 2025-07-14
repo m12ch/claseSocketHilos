@@ -42,18 +42,15 @@ public class cliente {
             }catch (IOException i){
                 System.out.println(i);
             }
-
-            //cierre de conexion
-            try {
-                in.close();
-                out.close();
-                s.close();
-            }catch (IOException i){
-                System.out.println(i);
-            }
-
         }
-
+        //cierre de conexion
+        try {
+            in.close();
+            out.close();
+            s.close();
+        }catch (IOException i){
+            System.out.println(i);
+        }
     }
     public static void main(String[] args){
         new cliente("127.0.0.1",5000);
